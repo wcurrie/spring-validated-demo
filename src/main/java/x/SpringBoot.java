@@ -10,7 +10,7 @@ import org.springframework.validation.beanvalidation.MethodValidationPostProcess
 @EnableAutoConfiguration
 @ComponentScan
 @EnableScheduling
-public class X {
+public class SpringBoot {
 
     @Bean
     public MethodValidationPostProcessor postProcessor() {
@@ -18,6 +18,6 @@ public class X {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(X.class, args);
+        SpringApplication.run(SpringBoot.class, args);
     }
 }
